@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>I have no answer for that.</template>
+  </category>
+  <category>
+    <pattern>HELLO</pattern>
+    <template>Hi, what is your name?</template>
+</category>
+<category>
+    <pattern>MY NAME IS *</pattern>
+    <template>Hey <set name="username"><star/></set>, what can I help you with?</template>
+</category>
+<category>
+    <pattern>WHERE ARE THE LECTURES</pattern>
+    <template>The lectures are in the modules.</template>
+</category>
+<category>
+    <pattern>HOW DO I CONTACT THE PROFESSOR</pattern>
+    <template>You can contact the professor by email or attend office hours found in the syllabus.</template>
+</category>
+<category>
+    <pattern>WHAT IS THIS CLASS ABOUT</pattern>
+    <template>This class is on communicating with AI and building chatbots.</template>
+</category>
+<category>
+    <pattern>GOODBYE</pattern>
+    <template>See you later <get name="username"/>!</template>
+</category>
+</aiml>
